@@ -1,10 +1,10 @@
 # Formal Verification of a Security Protocol
 
-## 📖 About
+## About
 
 A formal-methods laboratory for reasoning about authentication, secrecy, replay resistance, and protocol-state invariants before relying on an implementation.
 
-## ✨ Features
+## Features
 
 - Client/server/attacker protocol model
 - Delayed, reordered, and replayed-message scenarios
@@ -12,13 +12,13 @@ A formal-methods laboratory for reasoning about authentication, secrecy, replay 
 - Replay-resistance invariants
 - Separation between formal specification and reference state machine
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - TLA+ for formal specification
 - Rust for reference state-machine implementation
 - Model-checking / verification tooling as configured in the repository
 
-## 🏗 Architecture
+## Architecture
 
 ```text
 Protocol specification
@@ -32,7 +32,7 @@ Model checking
 Reference implementation tests
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 .
@@ -42,12 +42,12 @@ Reference implementation tests
 └── README.md
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - TLA+ tooling/model checker
 - Rust toolchain
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/matinwgg/formal-verification-security-protocol.git
@@ -57,19 +57,19 @@ cargo test
 
 Run the TLA+ specification using the model-checking configuration supplied under `tla/`.
 
-## 🧮 Verification Model
+## Verification Model
 
 The protocol is reasoned about as a transition system. Security properties are predicates over reachable states; counterexamples are traces showing how an invariant can be violated.
 
-## 🧪 Testing
+## Testing
 
 Reference implementation tests are complementary to formal verification; passing tests do not prove the protocol properties for all possible executions.
 
-## 🔐 Security Scope
+## Security Scope
 
-Cryptographic primitives are idealized abstractions in the model. Formal verification of the model does not automatically establish security of a concrete cryptographic implementation or deployment.
+Cryptographic primitives are idealised abstractions in the model. Formal verification of the model does not automatically establish security of a concrete cryptographic implementation or deployment.
 
-## 🚧 Future Work
+## Future Work
 
 - Temporal liveness properties
 - More attacker capabilities
@@ -77,14 +77,14 @@ Cryptographic primitives are idealized abstractions in the model. Formal verific
 - Concrete cryptographic assumptions
 - Automated model-checking CI
 
-## 🤝 Contributing
+## Contributing
 
 Every protocol change should update the model, invariants, counterexample analysis, and reference implementation tests together.
 
-## 📄 License
+## License
 
 See repository license information.
 
-## 👨‍💻 Author
+## Author
 
-**Matin Odoom**
+**A. Matin Odoom**
